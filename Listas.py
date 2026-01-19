@@ -34,3 +34,26 @@ print(lista_produtos)
 
 item_removido = lista_produtos.pop(0) #edita a lista pelo índice
 print(item_removido)
+
+
+#add item na lista
+lista_produtos.append('amplificador')
+print(lista_produtos)
+
+#mesclar uma lista em outra
+lista_produtos2 = ['bateria', 'teclado']
+lista_produtos.extend(lista_produtos2)
+print(lista_produtos)
+
+#inserir um item em uma posição específica
+lista_produtos.insert(1, 'microfone')
+print(lista_produtos)
+
+
+#contar quantas um item aparece na lista
+print(lista_produtos.count('microfone'))
+
+
+#ordenar uma lista (letra maiúscula primeiro e minúsculas depois)
+lista_produtos.sort()
+lista_produtos.sort(reverse=true) #do maior pro menor
