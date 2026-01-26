@@ -1,9 +1,8 @@
-#exercício para retornar a soma de dois números 
+#exercício para verificar se um número é PAR ou ÍMPAR 
 
-def somar(a, b):
-    
-    return a + b
+def par_impar(numero):
+    return 'número é PAR' if numero % 2 == 0 else 'Número é ÍMPAR'
 
-resultado = somar(10, 10)
+resultado = par_impar(2)
 print(resultado)
 
