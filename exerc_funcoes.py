@@ -1,8 +1,9 @@
-#exercício para retornar o dobro de um número 
+#exercício para retornar a soma de dois números 
 
-def dobro_numero(numero):
-    return numero * 2
+def somar(a, b):
+    
+    return a + b
 
-resultado = dobro_numero(4)
+resultado = somar(10, 10)
 print(resultado)
 
