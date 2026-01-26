@@ -3,10 +3,9 @@
 
 def desconto_produto(preco_produto):
 
-    desconto = preco_produto * 0.10
-    preco_final = preco_produto - desconto
-
     if preco_produto >= 100:
+        desconto = preco_produto * 0.10
+        preco_final = preco_produto - desconto
         return preco_final
     else:
         return preco_produto
