@@ -1,13 +1,8 @@
-def media_nota(nota1, nota2):
-    
-    media = (nota1 + nota2) / 2
+#exercício para retornar o dobro de um número 
 
-    if media >= 7:
-        return('APROVADO')
-    elif media >= 5:
-        return('RECUPERAÇÃO')
-    else:
-        return('REPROVADO')
-    
-resultado = media_nota(7, 5)
+def dobro_numero(numero):
+    return numero * 2
+
+resultado = dobro_numero(4)
 print(resultado)
+
