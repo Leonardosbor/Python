@@ -1,14 +1,10 @@
-#se o preço for maior que 100 → 10% de desconto
-#se o preço for menor que 100 → não tem desconto 
+#se o número for menor que 0, retornar 'valor invalido'
 
-def desconto_produto(preco_produto):
+def validacao_numero(numero):
 
-    if preco_produto >= 100:
-        desconto = preco_produto * 0.10
-        preco_final = preco_produto - desconto
-        return preco_final
-        
-resultado = desconto_produto(120)
+    return 'VALOR INVALIDO' if numero < 0 else 'VALOR VALIDO'
+
+resultado = validacao_numero(0)
 print(resultado)
     
 
