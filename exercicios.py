@@ -1,5 +1,11 @@
-def verificar_ruptura(lista_numeros):
-    return 0 in lista_numeros
+def media_lista(lista_numeros):
     
+    soma = 0
 
-print(verificar_ruptura([10, 45, 2, 0, 15]))
+    for item in lista_numeros:
+        soma += item
+    
+    media = soma / len(lista_numeros)
+    return media
+
+print(media_lista([5, 10, 15]))
