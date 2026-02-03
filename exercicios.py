@@ -1,5 +1,14 @@
-def filtrar_pares(lista_numeros):
+def boletim(dicionario):
     
-    return [item for item in lista_numeros if item % 2 == 0]
+    nota = dicionario['nota']
+
+    if nota >= 7:
+        return 'APROVADO'
+            
+    if 5 <= nota <= 6.9:
+        return 'RECUPERAÇÃO'
+        
+    return 'REPROVADO'
     
-print(filtrar_pares([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+    
+             
