@@ -1,4 +1,4 @@
-def saudacao(nome):
-    return(f'Olá, {nome}')
+def soma(a, b):
+    return a + b
 
-print(saudacao('Leonardo'))
+print(soma(5, 3))
