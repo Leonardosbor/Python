@@ -10,23 +10,42 @@ def boletim_aluno(aluno):
 
 
 
-def boletim_turma(lista_alunos):
-    
-    resultado = []
+def resumo_turma(lista_alunos):
+
+    contador = {
+        'Aprovados': 0,
+        'Recuperação': 0,
+        'Reprovados': 0
+    }
+
 
     for aluno in lista_alunos:
         situacao = boletim_aluno(aluno)
-        texto = f"{aluno['nome']} - {situacao}"
-        resultado.append(texto)
+
+        if situacao == 'APROVADO':
+            contador['Aprovados'] += 1
         
-    return resultado
+        elif situacao == 'RECUPERAÇÃO':
+            contador['Recuperação'] += 1
+        
+        else:
+            contador['Reprovados'] += 1
+        
+    return contador
 
 
 turma = [
     {'nome': 'Ana', 'nota': 8},
     {'nome': 'Carlos', 'nota': 5.5},
-    {'nome': 'João', 'nota': 3}
+    {'nome': 'João', 'nota': 3},
+    {'nome': 'Maria', 'nota': 9}
 ]
 
-print(boletim_turma(turma))
+print(resumo_turma(turma))
+
+
+
+
+
+
     
